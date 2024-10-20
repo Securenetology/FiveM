@@ -63,7 +63,7 @@ Write-Host "CitizenFX.ini has been backed up to $BackupLocation" -ForegroundColo
 
 #Create shortcuts for quick connect when restored
 $TargetFile = "$env:LOCALAPPDATA\FiveM\FiveM.exe"
-$ShortcutFile = "$BackupLocation\FiveM - NERP"
+$ShortcutFile = "$BackupLocation\FiveM - NERP.ink"
 $WScriptShell = New-Object -ComObject WScript.Shell
 $Shortcut = $WScriptShell.CreateShortcut($ShortcutFile)
 $Shortcut.TargetPath = $TargetFile
